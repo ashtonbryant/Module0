@@ -20,7 +20,19 @@ int main(int argc, char** argv) {
 
   // command line 
   //
-  arginter(m, n, argv, argc);
+  arginter(m, n, argv, argc);	
+	
+  // exit if m or n > 4
+  //
+  if(m > 4 || n > 4){
+
+      // Print and exit
+      //	
+      fprintf(stdout,"m or n is greater than 4\n");
+      exit(1);			 
+	
+  }
+						
 
   // declare class
   //
